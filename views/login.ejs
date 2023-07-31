@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <%- include('./common/nav.ejs') -%>
+
+    <section class="pt-5" style="background-color: #eee">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-lg-12 col-xl-11">
+            <div class="card text-black" style="border-radius: 25px">
+              <div class="card-body p-md-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
+                      Login
+                    </p>
+
+                    <form class="mx-1 mx-md-4" method="post" action="">
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="email" id="form3Example3c" class="form-control" name = "email" />
+                          <label class="form-label" for="form3Example3c">Email</label>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="password" id="form3Example4c" class="form-control" name="password" />
+                          <label class="form-label" for="form3Example4c">Password</label>
+                        </div>
+                      </div>
+
+                      <div class="form-check d-flex justify-content-center mb-5">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" name="checkbox" />
+                        <label class="form-check-label" for="form2Example3">
+                          I agree all statements in
+                          <a href="#!">Terms of service</a>
+                        </label>
+                      </div>
+
+                      <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                          Login
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                    <!-- Carousel wrapper -->
+                    <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark"
+                      data-mdb-ride="carousel">
+                      <!-- Indicators -->
+                      <div class="carousel-indicators">
+                        <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                        <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1"
+                          aria-label="Slide 1"></button>
+                        <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2"
+                          aria-label="Slide 1"></button>
+                      </div>
+
+                      <!-- Inner -->
+                      <div class="carousel-inner">
+                        <!-- Single item -->
+                        <div class="carousel-item active" data-mdb-interval="2000">
+                          <img src="../assets/pexels-lukas-574071.jpg" class="d-block w-100"
+                            alt="Motorbike Smoke" />
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>
+                              Nulla vitae elit libero, a pharetra augue mollis
+                              interdum.
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item" data-mdb-interval="2000" >
+                          <img src="../assets/pexels-christina-morillo-1181263.jpg" class="d-block w-100"
+                            alt="Mountaintop" />
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit.
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item" data-mdb-interval="2000">
+                          <img src="../assets/pexels-olia-danilevich-4974920.jpg" class="d-block w-100"
+                            alt="Woman Reading a Book" />
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>
+                              Praesent commodo cursus magna, vel scelerisque
+                              nisl consectetur.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Inner -->
+
+                      <!-- Controls -->
+                      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant"
+                        data-mdb-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant"
+                        data-mdb-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!-- Carousel wrapper -->
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+                  <!-- Copyright -->
+                  <div class="text-white mb-3 mb-md-0">
+                    Copyright © 2020. All rights reserved.
+                  </div>
+                  <!-- Copyright -->
+
+                  <!-- Right -->
+                  <div>
+                    <a href="#!" class="text-white me-4">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#!" class="text-white me-4">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#!" class="text-white me-4">
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#!" class="text-white">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <!-- Right -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navbar -->
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+</body>
+
+</html>
