@@ -8,6 +8,9 @@ const User = require('../models/userschema');
 router.get('/', (req, res) => {
   res.render('home');
 });
+router.get('/error',(req,res)=>{
+  res.render('error')
+})
 router.get('/login',(req,res)=>{
   res.render('login')
 })
@@ -18,7 +21,7 @@ async (req, res) => {
     const user = await User.findOne({ email });
 
     if (!user || !(await bcrypt.compare(password, user.password))) {
-      return res.redirect('login');
+      return res.render('error');
     }
 
     req.session.isLoggedIn = true;
@@ -27,7 +30,7 @@ async (req, res) => {
       if (err) {
         console.log(err);
       }
-      res.redirect('/user');
+      res.render('home');
     });
   } catch (err) {
     console.log(err);
